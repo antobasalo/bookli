@@ -1,6 +1,9 @@
 # Bookli
 
 Aplicación utilizada en la cursada 2020 de Ingenieria de Software. UTN-FRLP
+V1.2.1 
+Features
+- Se agregó movimiento a las tarjetas de libros disponibles al hacer hover sobre ellas
 
 #GRUPO NUMERO 1
  BASALO,ANTONELLA
