@@ -165,7 +165,7 @@ expect(document.getElementById('idplace').placeholder).toBe('Buscar libro')
         var input = buyLabel.children[0];
         
         expect(input.getAttribute("type")).toEqual("button");
-        expect(input.getAttribute("onclick")).toEqual("window.open('//www.amazon.com/-/es/','_blank')");
+        expect(input.getAttribute("onclick")).toEqual("window.open('//www.amazon.com/books-used-books-textbooks/b?ie=UTF8&node=283155','_blank')");
         expect(input.getAttribute("name")).toEqual("filter");
 
 	var divBuy = buyLabel.children[1];
