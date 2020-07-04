@@ -150,4 +150,25 @@ expect(document.getElementById('idplace').placeholder).toBe('Buscar libro')
         expect(imgElement.getAttribute("src")).toEqual("/assets/logo.svg");
         expect(imgElement.getAttribute("alt")).toEqual("bookli logo");
     });
+
+    test('amazonLink', () => {
+        document.documentElement.innerHTML = nunjucks.render('../../client/views/home.html');
+        var form = document.getElementsByClassName("card filters")[0];
+
+        expect(form.children.length).toEqual(4);
+        
+        var buyLabel = form.children[3];
+        
+        expect(buyLabel.getAttribute("class")).toEqual("filter");
+        expect(buyLabel.children.length).toEqual(2);
+        
+        var input = buyLabel.children[0];
+        
+        expect(input.getAttribute("type")).toEqual("button");
+        expect(input.getAttribute("onclick")).toEqual("window.open('//www.amazon.com/-/es/','_blank')");
+        expect(input.getAttribute("name")).toEqual("filter");
+
+	var divBuy = buyLabel.children[1];
+	expect(divBuy.textContent).toEqual("Comprar");
+    });
 });
