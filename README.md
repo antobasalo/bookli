@@ -1,7 +1,7 @@
 # Bookli
 
 Aplicación utilizada en la cursada 2020 de Ingenieria de Software. UTN-FRLP
-V1.2.2
+V1.3.0
 Features
 - Se cambió el color de borde a todas las cards.
 - Se agregó en la home un botón de "Comprar" con un link a la sección
